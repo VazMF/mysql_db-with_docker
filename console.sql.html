@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>console.sql</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+console.sql</font>
+</center></td></tr></table>
+<pre><span class="s0">use </span><span class="s1">university</span><span class="s0">;</span>
+<span class="s0">insert into </span><span class="s1">professor </span><span class="s0">values</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Simone'</span><span class="s0">, </span><span class="s2">'132'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Kaneshi'</span><span class="s0">, </span><span class="s2">'675'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Ricardo'</span><span class="s0">, </span><span class="s2">'145'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Kleber'</span><span class="s0">, </span><span class="s2">'234'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Mario'</span><span class="s0">, </span><span class="s2">'777'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Tania'</span><span class="s0">, </span><span class="s2">'511'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">insert into subject value</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Programação OO'</span><span class="s0">, </span><span class="s2">'A disciplina tem como objetivo proporcionar aos alunos conhecimentos sobre a linguagem de programação orientada a objetos.'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Arquitetura de Computadores'</span><span class="s0">, </span><span class="s2">'A disciplina tem como objetivo desenvolver nos alunos a noção da evolução dos computadores.'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Sistemas digitais'</span><span class="s0">, </span><span class="s2">'A disciplina tem como objetivo passar  fundamentos sobre circuitos combinacionais, sequênciais e álgebra binária e Booleana.'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Gerenciamento de Projetos'</span><span class="s0">, </span><span class="s2">'O objetivo desta disciplina é criar um espaço para discussão de pesquisas recentes na área de gerenciamento de projetos.'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Álgebra Linear'</span><span class="s0">, </span><span class="s2">'O objetivo dessa disciplina é fornecer uma base sólida sobre da teoria dos espaços vetoriais e operadores lineares.'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Lógica de Porgramação'</span><span class="s0">, </span><span class="s2">'A disciplina tem como objetivo compreender e propor algoritmos para a solução de problemas computacionais.'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">insert into </span><span class="s1">student </span><span class="s0">values</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'André Fukushigue'</span><span class="s0">, </span><span class="s2">'201071115'</span><span class="s0">, </span><span class="s2">'1999-03-12'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'João Silva'</span><span class="s0">, </span><span class="s2">'201151007'</span><span class="s0">, </span><span class="s2">'1985-06-23'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Eduardo Lacerda'</span><span class="s0">, </span><span class="s2">'200572006'</span><span class="s0">, </span><span class="s2">'2000-04-12'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Maria Fernanda'</span><span class="s0">, </span><span class="s2">'20101004'</span><span class="s0">, </span><span class="s2">'2002-04-08'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Ana Kataoka'</span><span class="s0">, </span><span class="s2">'201278003'</span><span class="s0">, </span><span class="s2">'2002-07-04'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'Vinicius Mello'</span><span class="s0">, </span><span class="s2">'200741005'</span><span class="s0">, </span><span class="s2">'2001-08-04'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">delete  from </span><span class="s1">student</span>
+<span class="s0">where </span><span class="s1">id = </span><span class="s3">1</span><span class="s0">;</span>
+
+<span class="s0">delete from </span><span class="s1">student</span>
+<span class="s0">where </span><span class="s1">id = </span><span class="s3">2</span><span class="s0">;</span>
+
+<span class="s0">update </span><span class="s1">student</span>
+<span class="s0">set name </span><span class="s1">= </span><span class="s2">'Vinicius Lucas'</span>
+<span class="s0">where </span><span class="s1">id = </span><span class="s3">6</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from </span><span class="s1">student</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from </span><span class="s1">professor</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from subject;</span>
+
+<span class="s0">select name, </span><span class="s1">birth </span><span class="s0">from </span><span class="s1">student</span><span class="s0">;</span>
+
+<span class="s0">insert into </span><span class="s1">class </span><span class="s0">values</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'19:30:00'</span><span class="s0">, </span><span class="s2">'20:30:00'</span><span class="s0">, </span><span class="s2">'Monday'</span><span class="s0">, </span><span class="s2">'28'</span><span class="s0">, </span><span class="s2">'5'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'19:30:00'</span><span class="s0">, </span><span class="s2">'20:30:00'</span><span class="s0">, </span><span class="s2">'Tuesday'</span><span class="s0">, </span><span class="s2">'26'</span><span class="s0">, </span><span class="s2">'3'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'19:30:00'</span><span class="s0">, </span><span class="s2">'20:30:00'</span><span class="s0">, </span><span class="s2">'Wednesday'</span><span class="s0">, </span><span class="s2">'27'</span><span class="s0">, </span><span class="s2">'4'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'19:30:00'</span><span class="s0">, </span><span class="s2">'20:30:00'</span><span class="s0">, </span><span class="s2">'Thursday'</span><span class="s0">, </span><span class="s2">'29'</span><span class="s0">, </span><span class="s2">'1'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'19:30:00'</span><span class="s0">, </span><span class="s2">'20:30:00'</span><span class="s0">, </span><span class="s2">'Friday'</span><span class="s0">, </span><span class="s2">'30'</span><span class="s0">, </span><span class="s2">'7'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">insert into </span><span class="s1">subject_professor </span><span class="s0">values</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'1'</span><span class="s0">, </span><span class="s2">'31'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'3'</span><span class="s0">, </span><span class="s2">'26'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'4'</span><span class="s0">, </span><span class="s2">'27'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'5'</span><span class="s0">, </span><span class="s2">'28'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'6'</span><span class="s0">, </span><span class="s2">'29'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'7'</span><span class="s0">, </span><span class="s2">'30'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">insert into </span><span class="s1">classes_students </span><span class="s0">values</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'3'</span><span class="s0">, </span><span class="s2">'1'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'4'</span><span class="s0">, </span><span class="s2">'2'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'5'</span><span class="s0">, </span><span class="s2">'3'</span><span class="s1">)</span><span class="s0">,</span>
+<span class="s1">(</span><span class="s0">default, </span><span class="s2">'6'</span><span class="s0">, </span><span class="s2">'4'</span><span class="s1">)</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">* </span><span class="s0">from </span><span class="s1">student s</span>
+<span class="s0">join </span><span class="s1">classes_students cs</span>
+<span class="s0">on </span><span class="s1">s.id = cs.studentid</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">p.name</span><span class="s0">, </span><span class="s1">sp.id </span><span class="s0">from </span><span class="s1">professor p</span>
+<span class="s0">join </span><span class="s1">subject_professor sp</span>
+<span class="s0">on </span><span class="s1">p.id = sp.professorid</span><span class="s0">;</span>
+
+<span class="s0">select name from </span><span class="s1">professor</span>
+<span class="s0">order by name;</span>
+
+<span class="s0">select </span><span class="s1">s.name</span><span class="s0">, </span><span class="s1">p.name </span><span class="s0">from </span><span class="s1">professor p</span>
+<span class="s0">join </span><span class="s1">subject_professor sp</span>
+<span class="s0">on </span><span class="s1">p.id = sp.professorid</span>
+<span class="s0">left join subject </span><span class="s1">s</span>
+<span class="s0">on </span><span class="s1">s.id = sp.subjectid</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">p.name</span><span class="s0">, </span><span class="s1">sp.id</span><span class="s0">, </span><span class="s1">s.name </span><span class="s0">from </span><span class="s1">professor p</span>
+<span class="s0">join </span><span class="s1">subject_professor sp</span>
+<span class="s0">on </span><span class="s1">p.id = sp.professorid</span>
+<span class="s0">join subject </span><span class="s1">s</span>
+<span class="s0">on </span><span class="s1">s.id = sp.subjectid</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">c.weekday</span><span class="s0">, </span><span class="s1">s.name </span><span class="s0">from </span><span class="s1">class c</span>
+<span class="s0">join subject </span><span class="s1">s </span><span class="s0">right outer join </span><span class="s1">classes_students cs</span>
+<span class="s0">on </span><span class="s1">c.id = cs.classid</span><span class="s0">;</span>
+
+<span class="s0">select </span><span class="s1">c.weekday</span><span class="s0">, </span><span class="s1">s.name </span><span class="s0">from </span><span class="s1">class c</span>
+<span class="s0">join subject </span><span class="s1">s </span><span class="s0">left outer join </span><span class="s1">classes_students cs</span>
+<span class="s0">on </span><span class="s1">c.id = cs.classid</span><span class="s0">;</span></pre>
+</body>
+</html>
